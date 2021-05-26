@@ -4,11 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-// import { StatusBar } from "expo-status-bar";
-
 // Import Screens
-import CategoriesStack from "./screens/CategoriesStack";
-import Categories from "./screens/Categories";
+import CategoriesStack from "./screens/categories/CategoriesStack";
 import Reports from "./screens/Reports";
 
 // i18n

@@ -1,5 +1,11 @@
 {
   "name": "Nombre",
   "home": "inicio",
-  "reports": "Mis reportes"
+  "reports": "Mis reportes",
+  "categories": "Categorías",
+  "subcategories": "Subcategorías",
+  "categories_title": "Categoría",
+  "categories_subtitle": "Selecciona una opción para continuar",
+  "price_gouging_title": "Incremento de precios",
+  "price_gouging_subtitle": "Selecciona el producto o servicio que tiene un incremento de precio excesivo"
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function Subcategories() {
+export default function covid() {
   return (
     <View>
-      <Text>Subcategories</Text>
+      <Text>COVID</Text>
     </View>
   )
 }

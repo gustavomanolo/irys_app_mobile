@@ -5,6 +5,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 // Screens
 import Categories from "./Categories";
 import Subcategories from "./Subcategories";
+import Covid from "./covid/Covid";
+
+// i18n
+import i18n from "../../lib/i18n/i18n";
 
 // Define Stack Navigator
 const Stack = createStackNavigator();
@@ -13,7 +17,7 @@ export default function () {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Categories"
+        name="categories"
         component={Categories}
         options={({ navigation, route }) => ({
           // title: "Categories",
@@ -24,27 +28,39 @@ export default function () {
           headerTintColor: "#fff",
           headerTitle: (props) => (
             <Image
-              source={require("../assets/irys_logo_white.png")}
+              source={require("../../assets/irys_logo_white.png")}
               style={styles.imgLogo}
             />
           ),
         })}
       />
       <Stack.Screen
-        name="Subcategories"
+        name="subcategories"
         component={Subcategories}
         options={({ navigation, route }) => ({
           // headerShown: true,
           // headerBackTitle: i18n.t("back"),
-          title: "Agregar nuevo",
-          headerTransparent: false,
+          title: i18n.t("subcategories"),
+          // headerTransparent: false,
           headerBackTitleVisible: false,
           // headerTitle: "Historial",
-          headerTintColor: "#333",
-          headerTitleStyle: {
-            // fontWeight: 'bold',
-            color: "#333",
+          headerStyle: {
+            backgroundColor: "#27B29E",
           },
+          headerTintColor: "#fff",
+        })}
+      />
+      <Stack.Screen
+        name="covid"
+        component={Covid}
+        options={({ navigation, route }) => ({
+          title: "Covid",
+          headerBackTitleVisible: false,
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: "#27B29E",
+          },
+          headerTintColor: "#fff"
         })}
       />
     </Stack.Navigator>

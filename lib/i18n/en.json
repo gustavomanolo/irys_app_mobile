@@ -1,5 +1,11 @@
 {
   "name": "Name",
   "home": "Home",
-  "reports": "My reports"
+  "reports": "My reports",
+  "categories": "Categories",
+  "subcategories": "Subcategories",
+  "categories_title": "Category",
+  "categories_subtitle": "Select an option to continue",
+  "price_gouging_title": "Report price gouging",
+  "price_gouging_subtitle": "Please the type of product or service that is being sold at an exorbitant or excessive price"
 }

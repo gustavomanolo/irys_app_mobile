@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 // Screens
 import Categories from "./Categories";
 import Subcategories from "./Subcategories";
+import Description from "./Description";
+import UserLocation from "./UserLocation";
 import Covid from "./covid/Covid";
 
 // i18n
@@ -51,6 +53,32 @@ export default function () {
         })}
       />
       <Stack.Screen
+        name="description"
+        component={Description}
+        options={({ navigation, route }) => ({
+          title: i18n.t("description"),
+          headerBackTitleVisible: false,
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: "#27B29E",
+          },
+          headerTintColor: "#fff"
+        })}
+      />
+      <Stack.Screen
+        name="userlocation"
+        component={UserLocation}
+        options={({ navigation, route }) => ({
+          title: i18n.t("location"),
+          headerBackTitleVisible: false,
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: "#27B29E",
+          },
+          headerTintColor: "#fff"
+        })}
+      />
+      <Stack.Screen
         name="covid"
         component={Covid}
         options={({ navigation, route }) => ({
@@ -68,12 +96,6 @@ export default function () {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    alignSelf: "stretch",
-    backgroundColor: "#fff",
-  },
   imgLogo: {
     height: 25,
     width: 100,

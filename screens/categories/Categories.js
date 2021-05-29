@@ -57,6 +57,7 @@ export default function Categories({ navigation }) {
 
                 navigation.navigate(stackItem, {
                   item: categories[item],
+                  category_id: item
                 });
               }}
             >

@@ -7,6 +7,10 @@ This is the mobile app made with React Native (Expo)
 
 ![Demo](https://raw.githubusercontent.com/gustavomanolo/irys_app_mobile/main/demo_app.gif)
 
+## Run it on your device with Expo (just scan de QR code)
+
+- [Expo](https://expo.io/@gustavomanolo/irys_app)
+
 ## Config file
 
 To run this project, you will need create a config.json file under "config/" folder.

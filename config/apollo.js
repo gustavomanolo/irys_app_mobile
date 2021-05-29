@@ -1,9 +1,9 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
+import config from './config.json'
 
 // Initialize Apollo Client
 const client = new ApolloClient({
-  // uri: 'http://192.168.1.177:4000/',
-  uri: 'https://irys-apollo.herokuapp.com/',
+  uri: config.apollo_uri,
   cache: new InMemoryCache()
 });
 

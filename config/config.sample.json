@@ -1,0 +1,4 @@
+{
+  "apollo_uri": "https://irys-apollo.herokuapp.com/",
+  "google_api": "Your Google Places API Key"
+}

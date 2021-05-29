@@ -3,6 +3,9 @@
 
 This is the mobile app made with React Native (Expo)
 
+## Demo
+
+![Demo](https://raw.githubusercontent.com/gustavomanolo/irys_app_mobile/main/demo_app.gif)
 
 ## Config file
 
@@ -47,9 +50,7 @@ Run ios simulator
 ```bash
   i
 ```
-## Demo
 
-![Demo](https://raw.githubusercontent.com/gustavomanolo/irys_app_mobile/main/demo_app.gif)
 ## Authors
 
 - [@gustavomanolo](https://www.github.com/gustavomanolo)
